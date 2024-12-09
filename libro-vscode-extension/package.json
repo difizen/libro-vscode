@@ -1,5 +1,5 @@
 {
-  "name": "libro-notebook",
+  "name": "libro-vscode-extension",
   "displayName": "Libro Notebook",
   "description": "A vscode notebook extension for ipynb files powered by libro",
   "version": "0.0.1",
@@ -14,7 +14,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "libro-notebook.helloWorld",
+        "command": "libro-vscode-extension.helloWorld",
         "title": "Hello World"
       }
     ]

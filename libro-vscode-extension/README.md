@@ -1,6 +1,6 @@
-# libro-notebook README
+# libro-vscode-extension README
 
-This is the README for your extension "libro-notebook". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "libro-vscode-extension". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
