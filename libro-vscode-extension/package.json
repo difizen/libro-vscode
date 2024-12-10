@@ -6,17 +6,31 @@
   "engines": {
     "vscode": "^1.95.0"
   },
-  "categories": [
-    "Other"
-  ],
+  "categories": ["Notebooks", "Machine Learning", "Data Science"],
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "libro-vscode-extension.helloWorld",
-        "title": "Hello World"
+        "command": "libro.notebook.new",
+        "title": "Create Libro Notebook Document",
+        "category": "libro notebook"
       }
+    ],
+    "customEditors": [
+      {
+        "viewType": "libro.notebook",
+        "displayName": "libro notebook",
+        "selector": [
+          {
+            "filenamePattern": "*.ipynb"
+          }
+        ]
+      }
+    ],
+    "activationEvents": [
+      "onCustomEditor:libro.notebook",
+      "onCommand:libro.notebook.new"
     ]
   },
   "scripts": {
